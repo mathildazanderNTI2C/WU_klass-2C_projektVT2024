@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  --burgerline_width: 30px;
+  --burgerline_height: 6px;
+  --burgerline_margin: 5px;
+    
+  --background_color: white;
+}
+
+#huvudsida{
+  height: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.25fr 1fr;
+  grid-template-areas:
+  "se1 se1 se1"
+  "se2 se2 se2"
+  "ar3 ar4 ar5" ;
+}
+
+#section_1 {
+  background-color: pink ;
+  grid-area: se1;
+  background-image: url(/img/sid1_huvudbild.jpg);
+  background-size: cover; 
+  background-position: center;
+}
+
+#section_2 {
+  background-color: white;
+  grid-area: se2;
+  padding-bottom:10px;
+  padding-left: 10px;
+}
+
+#article_3 {
+  background-color: rgb(245, 131, 190) ;
+  grid-area: ar3;
+}
+#article_4 {
+  background-color: rgb(214, 32, 247) ;
+  grid-area: ar4;
+}
+
+#article_5 {
+  background-color: rgb(0, 118, 186);
+  grid-area: ar5;
+}
+
+footer {
+  background-color: rgb(114, 31, 142);
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.sociala_medier{
+margin: 20px;
+display: flex;
+flex-direction: column;
+} 
+.juridiskt{
+  padding: 10px;
+  position: relative;
+}
+
+header {
+  background-color: white;
+  height: 80px;
+  display: flex;
+  background-color: var(--background_color);
+}
+
+#link_list {
+  background: var(--background_color);
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: -420px;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  transition: all 0.5s;
+}
+
+
+.links_visible {
+  transform: translateY(500px);
+}
+
+#link_list a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.25rem;
+  letter-spacing: 0.1875rem;
+  text-transform: uppercase;
+  width: 200px;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#link_list a:hover {
+  background: grey;
+  color: darkgrey;
+}
+
+.burger_line {
+  width: var(--burgerline_width);
+  height: var(--burgerline_height);
+  margin: var(--burgerline_margin);
+  background: black;
+  border-radius: 20%;
+  transition: all 0.5s;
+}
+
+.burger_in_x_form #burger_line_2 {
+  opacity: 0;
+}
+
+.burger_in_x_form #burger_line_1 {
+  transform: translateY(calc(var(--burgerline_height) + var(--burgerline_margin))) rotate(45deg);
+}
+
+.burger_in_x_form #burger_line_3 {
+  transform: translateY(calc((-1)*(var(--burgerline_height) + var(--burgerline_margin)))) rotate(-45deg);
+}
+
+#burger {
+  margin-right: 80px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+h1{
+  margin-top: 20px;
+  padding-left: 0;
+  align-items: left;
+}
+
+#upptack {
+  width: 165px;
+  height: 62px;
+  cursor: pointer;
+  color: BLACK;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: none;
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  border-radius:0%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+#text_se1 {
+  color: white;
+  position: relative;
+  left: 20%;
+  top: 40%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#prenumerera{
+  color: black;
+  background-color:lightgrey;
+  position: relative;
+  height: 50px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  margin-top: 20px;
+
+}
+
+@media screen and (max-width: 800px) {
+  #huvudsida{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.25fr 1fr 1fr 1fr ;
+    grid-template-areas:
+    "se1"
+    "se2"
+    "ar3"
+    "ar4"
+    "ar5";
+  }
+
+}
+
+
