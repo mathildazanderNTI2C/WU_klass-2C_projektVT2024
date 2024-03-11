@@ -9,10 +9,9 @@
 }
 
 #huvudsida{
-  height: 1000px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 0.25fr 1fr;
+  grid-template-rows: 600px 80px 500px;
   grid-template-areas:
   "se1 se1 se1"
   "se2 se2 se2"
@@ -20,36 +19,118 @@
 }
 
 #section_1 {
-  background-color: pink ;
   grid-area: se1;
-  background-image: url(/img/sid1_huvudbild.jpg);
-  background-size: cover; 
+  background-image: url(/img/bild_sid1.jpg);
   background-position: center;
+  background-size: cover;
+  
 }
 
 #section_2 {
   background-color: white;
   grid-area: se2;
-  padding-bottom:10px;
-  padding-left: 10px;
+  align-items: center;
+}
+
+#text_se2 {
+  padding-top: 50px;
+  font-size: 25px;
 }
 
 #article_3 {
-  background-color: rgb(245, 131, 190) ;
   grid-area: ar3;
+  background-image: url(/img/fashionweekcopenhagen_sid1_.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.fashionweek_copengen_text {
+color: white;
+font-size: 25px;
 }
 #article_4 {
-  background-color: rgb(214, 32, 247) ;
   grid-area: ar4;
+  background-image: url(/img/met_gala_sid1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#trendsida{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 300px 300px 300px;
+  grid-template-areas:
+  "se3 se3"
+  "se4 se5"
+  "se6 se7" 
+  "se8 se9";
+}
+
+#section_3{
+  background-color: white;
+  grid-area: se3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#trender_rubrik{
+  font-size: 80px;
+}
+
+#section_4{
+  background-color: blue;
+  grid-area: se4;
+  align-items: center;
+}
+#section_5{
+  background-color: green;
+  grid-area: se5;
+  align-items: center;
+
+}
+#section_6{
+  background-color: purple;
+  grid-area: se6;
+  align-items: center;
+}
+
+#section_7{
+  background-color: pink;
+  grid-area: se7;
+  align-items: center;
+}
+
+#section_8{
+  background-color: orange ;
+  grid-area: se8;
+  align-items: center;
+
+}
+#section_9{
+  background-color: greenyellow;
+  grid-area: se9;
+  align-items: center;
+
+}
+
+
+.met_gala_text {
+color: white;
+font-size: 25px;
 }
 
 #article_5 {
-  background-color: rgb(0, 118, 186);
-  grid-area: ar5;
+  background-image: url(/img/bild_sid1_newyork.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.new_york_text{
+  color: white;
+  font-size: 25px;
 }
 
 footer {
-  background-color: rgb(114, 31, 142);
+  background-color:beige;
   height: 100px;
   display: flex;
   justify-content: space-around;
@@ -67,9 +148,9 @@ flex-direction: column;
 }
 
 header {
-  background-color: white;
   height: 80px;
   display: flex;
+  justify-content: space-between;
   background-color: var(--background_color);
 }
 
@@ -133,15 +214,14 @@ header {
 }
 
 #burger {
-  margin-right: 80px;
+  margin-right: 20px;
   cursor: pointer;
-  padding: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
 h1{
   margin-top: 20px;
-  padding-left: 0;
-  align-items: left;
 }
 
 #upptack {
@@ -162,9 +242,10 @@ h1{
 #text_se1 {
   color: white;
   position: relative;
-  left: 20%;
-  top: 40%;
+  left: 200px;
+  top: 50px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 900px;
 }
 
 #prenumerera{
@@ -173,15 +254,21 @@ h1{
   position: relative;
   height: 50px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+  margin-left: 20px;
   margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 20px;
+
 
 }
 
+
+/* telefonanpassning */
 @media screen and (max-width: 800px) {
   #huvudsida{
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.25fr 1fr 1fr 1fr ;
+    grid-template-rows: 500px 80px 600px 500px 500px 500px ;
     grid-template-areas:
     "se1"
     "se2"
@@ -189,7 +276,13 @@ h1{
     "ar4"
     "ar5";
   }
+  #text_se1 {
+    color: white;
+    position: relative;
+    left: 20px;
+    top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 20px;
+  }
 
 }
-
-
