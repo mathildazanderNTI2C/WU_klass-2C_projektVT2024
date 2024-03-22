@@ -17,10 +17,24 @@
   "se2 se2 se2"
   "ar3 ar4 ar5" ;
 }
+/* #beautysida {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(8, 200px);
+  grid-template-areas:
+    "se10 se10 se10 se10"
+    "se11 se11 se11 se11"
+    "ar6 ar6 ar6 ar7"
+    "ar6 ar6 ar6 ar8"
+    "se12 se12 se12 se12"
+    "ar9 ar10 ar11 ar12"
+    "se13 se13 se13 se13"
+    "ar13 ar14 ar15 ar16";
+} */
 
 #section_1 {
   grid-area: se1;
-  background-image: url(/img/bild_sid1.jpg);
+  background-image: url(../img/bild_sid1.jpg);
   background-position: center;
   background-size: cover;
   
@@ -39,7 +53,7 @@
 
 #article_3 {
   grid-area: ar3;
-  background-image: url(/img/fashionweekcopenhagen_sid1_.jpg);
+  background-image: url(../img/fashionweekcopenhagen_sid1_.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -49,7 +63,7 @@ font-size: 25px;
 }
 #article_4 {
   grid-area: ar4;
-  background-image: url(/img/met_gala_sid1.jpg);
+  background-image: url(../img/met_gala_sid1.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -65,8 +79,45 @@ font-size: 25px;
   "se8 se9";
 }
 
+#beautysida{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 200px 300px 300px 3200px ;
+  grid-template-areas: 
+  "se1_b se1_b se1_b se1_b"
+  "se2 se2 se2 se2"
+  ""
+  ""
+  ""
+  ""
+  ""
+  ""
+  "";
+}
+
+#section1_beauty{
+  grid-area: se1_b;
+  color: blue;
+}
+
+/* <section id="section1_beauty">section 1</section>
+<section id="section2_beauty">section 2</section> 
+<article id="article1_beauty">aticle 1</article>
+<article id="article2_beauty">article 2</article>
+<article id="article3_beauty">article 3</article>
+<section id="section3_beauty">section 3</section>
+<article id="article4_beauty">article 4</article>
+<article id="article5_beauty">article 5 </article>
+<article id="article6_beauty">article 6</article>
+<article id="article7_beauty">article 7</article>
+<section id="section4_beauty">section 4</section>
+<article id="article8_beauty">article 8</article>
+<article id="article9_beauty">article 9</article>
+<article id="article10_beauty">article 10</article>
+<article id="article11_beauty">article 11</article> */
+
 #section_3{
-  background-color: white;
+  background-color: beige;
   grid-area: se3;
   display: flex;
   align-items: center;
@@ -77,41 +128,81 @@ font-size: 25px;
 }
 
 #section_4{
-  background-color: blue;
+  background-color: white;
   grid-area: se4;
   align-items: center;
+  display: flex;
+  justify-content: center;
 }
 #section_5{
-  background-color: green;
+  background-color: white;
   grid-area: se5;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  padding: 20px;
+
+}
+.text_trendsida{
+  padding-top:20px;
 
 }
 #section_6{
-  background-color: purple;
   grid-area: se6;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  padding: 20px;
+
 }
 
 #section_7{
-  background-color: pink;
   grid-area: se7;
   align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+}
+
+#palsjackor{
+  width: 90%;
+  height: 260px;
+  margin: 10px;
+}
+
+
+.bilder_trendsida{
+  width: 90%;
+  height: 260px;
+  margin: 10px;
+}
+
+#volang_trendsida{
+  height: 280px;
 }
 
 #section_8{
-  background-color: orange ;
+  background-color: white ;
   grid-area: se8;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 
 }
 #section_9{
-  background-color: greenyellow;
   grid-area: se9;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  padding: 20px;
 
 }
-
 
 .met_gala_text {
 color: white;
@@ -119,10 +210,76 @@ font-size: 25px;
 }
 
 #article_5 {
-  background-image: url(/img/bild_sid1_newyork.jpg);
+  grid-area: ar5;
+  background-image: url(../img/bild_sid1_newyork.jpg);
   background-position: center;
   background-size: cover;
 }
+
+#article_6 {
+  grid-area: ar6;
+  background-color: green;
+
+}
+
+#article_7 {
+  grid-area: ar7;
+  background-color: pink;
+}
+
+#article_8 {
+  grid-area: ar8;
+  background-color: purple;
+}
+#article_9 {
+  grid-area: ar9;
+  background-color: blue;
+}
+#article_10 {
+  grid-area: ar10;
+  background-color: orange;
+}
+
+#article_11 {
+  grid-area: ar11;
+  background-color: purple;
+}
+
+#article_12 {
+  grid-area: ar12;
+  background-color: turquoise;
+}
+#article_13 {
+  grid-area: ar13;
+  background-color: darkblue;
+}
+#article_14 {
+  grid-area: ar8;
+  background-color: pink;
+}
+#article_15 {
+  grid-area: ar15;
+  background-color: purple;
+}
+#article_16 {
+  grid-area: ar16;
+  background-color: blueviolet;
+}
+#section_12{
+  grid-area: se13;
+  background-color: grey;
+}
+#section_13{
+  grid-area: se13;
+  background-color: beige;
+}
+
+
+
+
+
+
+
 
 .new_york_text{
   color: white;
