@@ -17,20 +17,6 @@
   "se2 se2 se2"
   "ar3 ar4 ar5" ;
 }
-/* #beautysida {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(8, 200px);
-  grid-template-areas:
-    "se10 se10 se10 se10"
-    "se11 se11 se11 se11"
-    "ar6 ar6 ar6 ar7"
-    "ar6 ar6 ar6 ar8"
-    "se12 se12 se12 se12"
-    "ar9 ar10 ar11 ar12"
-    "se13 se13 se13 se13"
-    "ar13 ar14 ar15 ar16";
-} */
 
 #section_1 {
   grid-area: se1;
@@ -80,52 +66,235 @@ font-size: 25px;
 }
 
 #beautysida{
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 200px 300px 300px 3200px ;
+  grid-template-rows: 200px 500px 50px 400px;
   grid-template-areas: 
   "se1_b se1_b se1_b se1_b"
-  "se2 se2 se2 se2"
-  ""
-  ""
-  ""
-  ""
-  ""
-  ""
-  "";
+  "se2_b se2_b se2_b se3_b"
+  "ur ur ur ur"
+  "se4_b se4_b se4_b se4_b";
 }
 
-#section1_beauty{
+#underrubrik {
+  grid-area: ur;
+}
+
+#rubrik_beauty {
+  font-size: xx-large;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#text_beauty {
+  margin-right: 60px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#section_1_beauty {
   grid-area: se1_b;
-  color: blue;
+  background-color: white;
 }
 
-/* <section id="section1_beauty">section 1</section>
-<section id="section2_beauty">section 2</section> 
-<article id="article1_beauty">aticle 1</article>
-<article id="article2_beauty">article 2</article>
-<article id="article3_beauty">article 3</article>
-<section id="section3_beauty">section 3</section>
-<article id="article4_beauty">article 4</article>
-<article id="article5_beauty">article 5 </article>
-<article id="article6_beauty">article 6</article>
-<article id="article7_beauty">article 7</article>
-<section id="section4_beauty">section 4</section>
-<article id="article8_beauty">article 8</article>
-<article id="article9_beauty">article 9</article>
-<article id="article10_beauty">article 10</article>
-<article id="article11_beauty">article 11</article> */
+#section_2_beauty {
+  grid-area: se2_b;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#skincare_bild{
+  height: 90%;
+  padding-bottom: 0px;
+}
+#haircare_bild{
+  height: 200px;
+}
+#traning_beauty{
+  height: 200px;
+}
+
+#section_3_beauty {
+  grid-area: se3_b;
+  background-color: white;
+  text-align: center;
+}
+
+#secondhand_sida{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 500px 500px 100px 200px;
+  grid-template-areas: 
+  "sh_1 sh_1"
+  "sh_2 sh_3"
+  "sh_4 sh_4"
+  "sh_5 sh_5"
+  "sh_6 sh_6"
+  ;
+}
+#se1_sh{
+  grid-area: sh_1;
+  background-color: white;
+}
+
+#se2_sh{
+  grid-area: sh_2;
+  background-color: lightgrey;
+}
+
+#se3_sh{
+  grid-area: sh_3;
+}
+
+#se4_sh{
+  grid-area: sh_4;
+  background-color: white;
+  text-align: center;
+}
+
+#se5_sh{
+  grid-area: sh_5;
+  background-color: white;
+  text-align: center;
+}
+
+#se6_sh{
+  grid-area: sh_6;
+  display: flex;
+  flex-direction:row;
+  margin-bottom: 10px;
+
+}
+
+#sellpy{
+  background-color: blue;
+  height: 150px;
+  width: 300px;
+  color: white;
+  margin-left: 120px;
+  margin-right: 50px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+#vinted{
+  background-color: rgb(25, 159, 110);
+  height: 150px;
+  width: 300px;
+  color: white;
+  margin-right: 50px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+#vestaire{
+  background-color: red;
+  height: 150px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.secondhand_butik_text{
+  margin-top: 60px;
+  font-size: large;
+}
+
+#text_secondhand {
+  margin-right: 60px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#rubrik_secondhand{
+  font-size: xx-large;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#bild_stjarnjacka{
+  width: 100%;
+}
+
+#text_sh_1{
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-weight: bold;
+}
+
+#text_sh_huvud{
+  margin-top: 150px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#text_sh_2{
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#text_sh_3{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 30px;
+}
+
+#text_sh_4{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 30px;
+}
+
+#text_sh_5{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#se3_2{
+  margin-bottom: 20px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#smink_1{
+  height: 300px;
+}
+
+#smink_2{
+  height: 300px;
+}
+
+#smink_3{
+  height: 300px;
+}
+
+#smink_4{
+  height: 300px;
+}
+
+#section_4_beauty {
+  grid-area: se4_b;
+  background-color: white;
+  display: flex;
+  text-align: center;
+}
 
 #section_3{
-  background-color: beige;
+  background-color: white;
   grid-area: se3;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 #trender_rubrik{
-  font-size: 80px;
-}
+  font-size: 80px;}
 
 #section_4{
   background-color: white;
@@ -145,7 +314,6 @@ font-size: 25px;
 }
 .text_trendsida{
   padding-top:20px;
-
 }
 #section_6{
   grid-area: se6;
@@ -247,7 +415,6 @@ font-size: 25px;
 
 #article_12 {
   grid-area: ar12;
-  background-color: turquoise;
 }
 #article_13 {
   grid-area: ar13;
@@ -274,25 +441,19 @@ font-size: 25px;
   background-color: beige;
 }
 
-
-
-
-
-
-
-
 .new_york_text{
   color: white;
   font-size: 25px;
 }
 
 footer {
-  background-color:beige;
+  background-color:black;
   height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  color: white;
 }
 .sociala_medier{
 margin: 20px;
@@ -309,6 +470,7 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: var(--background_color);
+  border-bottom: solid black;
 }
 
 #link_list {
@@ -324,7 +486,6 @@ header {
   list-style: none;
   transition: all 0.5s;
 }
-
 
 .links_visible {
   transform: translateY(500px);
@@ -394,7 +555,7 @@ h1{
   left: 45%;
   border-radius:0%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
+  border-radius: 10px;
 }
 #text_se1 {
   color: white;
