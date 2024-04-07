@@ -1,21 +1,24 @@
 * {
   padding: 0;
   margin: 0;
-  --burgerline_width: 30px;
-  --burgerline_height: 6px;
-  --burgerline_margin: 5px;
+  --burgerline_width: 20px;
+  --burgerline_height: 3px;
+  --burgerline_margin: 4px;
     
   --background_color: white;
 }
 
 #huvudsida{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 600px 80px 500px;
+  width: 430px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 600px 80px 500px 500px 500px;
   grid-template-areas:
-  "se1 se1 se1"
-  "se2 se2 se2"
-  "ar3 ar4 ar5" ;
+  "se1"
+  "se2"
+  "ar3"
+  "ar4"
+  "ar5";
 }
 
 #section_1 {
@@ -33,8 +36,8 @@
 }
 
 #text_se2 {
-  padding-top: 50px;
-  font-size: 25px;
+  padding-top: 5px;
+  font-size: 20px;
 }
 
 #article_3 {
@@ -56,40 +59,50 @@ font-size: 25px;
 
 #trendsida{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  width: 430px;
+  grid-template-columns: 390px;
   grid-template-rows: 150px 300px 300px 300px;
   grid-template-areas:
-  "se3 se3"
-  "se4 se5"
-  "se6 se7" 
-  "se8 se9";
+  "se3"
+  "se4" 
+  "se5"
+  "se7"
+  "se6" 
+  "se8"
+  "se9";
 }
 
 #beautysida{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 200px 500px 50px 400px;
+  width: 430px;
+  height: 2500px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 350px 20px 400px 900px;
   grid-template-areas: 
-  "se1_b se1_b se1_b se1_b"
-  "se2_b se2_b se2_b se3_b"
-  "ur ur ur ur"
-  "se4_b se4_b se4_b se4_b";
+  "se1_b"
+  "se2_b"
+  "se3_b"
+  "ur"
+  "se4_b";
 }
 
 #underrubrik {
   grid-area: ur;
+  height: 80px;
 }
 
 #rubrik_beauty {
   font-size: xx-large;
   margin-left: 20px;
   margin-top: 20px;
+  width: 200px;
 }
 
 #text_beauty {
-  margin-right: 60px;
+  margin-right: 20px;
   margin-left: 20px;
   margin-top: 20px;
+  width: 320px;
 }
 
 #section_1_beauty {
@@ -97,17 +110,23 @@ font-size: 25px;
   background-color: white;
 }
 
+#beautytext_se2{
+  width: 400px;
+  padding-left: 40px;
+}
+
 #section_2_beauty {
   grid-area: se2_b;
   background-color: white;
-  display: flex;
   flex-direction: column;
   align-items: center;
+  width: 300px;
 }
 
 #skincare_bild{
-  height: 90%;
+  height: 280px;
   padding-bottom: 0px;
+  padding-left: 10px;
 }
 #haircare_bild{
   height: 200px;
@@ -124,46 +143,58 @@ font-size: 25px;
 
 #secondhand_sida{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 500px 500px 100px 200px;
+  width: 430px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 250px 400px 400px 1200px 200px 600px;
   grid-template-areas: 
-  "sh_1 sh_1"
-  "sh_2 sh_3"
-  "sh_4 sh_4"
-  "sh_5 sh_5"
-  "sh_6 sh_6"
+  "sh_1"
+  "sh_2"
+  "sh_3"
+  "sh_4"
+  "sh_5"
+  "sh_6"
   ;
 }
 #se1_sh{
   grid-area: sh_1;
   background-color: white;
+  width: 430px;
 }
 
 #se2_sh{
   grid-area: sh_2;
   background-color: lightgrey;
+  width: 430px;
+  text-align: center;
 }
 
 #se3_sh{
   grid-area: sh_3;
+  width: 430px;
+  height: 400px;
 }
 
 #se4_sh{
   grid-area: sh_4;
   background-color: white;
   text-align: center;
+  width: 430px;
 }
 
 #se5_sh{
   grid-area: sh_5;
   background-color: white;
   text-align: center;
+  width: 410px;
+  padding-top: 20px;
+  padding-left: 10px;
 }
 
 #se6_sh{
   grid-area: sh_6;
   display: flex;
-  flex-direction:row;
+  flex-direction:column;
+  align-items: center;
   margin-bottom: 10px;
 
 }
@@ -173,10 +204,9 @@ font-size: 25px;
   height: 150px;
   width: 300px;
   color: white;
-  margin-left: 120px;
-  margin-right: 50px;
   text-align: center;
   font-weight: bold;
+  margin-bottom:20px;
 
 }
 
@@ -185,9 +215,9 @@ font-size: 25px;
   height: 150px;
   width: 300px;
   color: white;
-  margin-right: 50px;
   text-align: center;
   font-weight: bold;
+  margin-bottom:20px ;
 
 }
 
@@ -207,9 +237,9 @@ font-size: 25px;
 }
 
 #text_secondhand {
-  margin-right: 60px;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-top: 20px;
+  width:430px;
 }
 
 #rubrik_secondhand{
@@ -219,19 +249,17 @@ font-size: 25px;
 }
 
 #bild_stjarnjacka{
-  width: 100%;
+  width:430px;
 }
 
 #text_sh_1{
-  margin-top: 40px;
-  margin-left: 100px;
-  margin-right: 100px;
   font-weight: bold;
+  width: 430px;
 }
 
 #text_sh_huvud{
-  margin-top: 150px;
-  margin-left: 100px;
+  margin-top: 50px;
+  margin-left: 60px;
   margin-right: 100px;
 }
 
@@ -282,7 +310,7 @@ font-size: 25px;
 #section_4_beauty {
   grid-area: se4_b;
   background-color: white;
-  display: flex;
+  display:grid;
   text-align: center;
 }
 
@@ -292,9 +320,11 @@ font-size: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 #trender_rubrik{
-  font-size: 80px;}
+  font-size: 60px;
+}
 
 #section_4{
   background-color: white;
@@ -302,6 +332,7 @@ font-size: 25px;
   align-items: center;
   display: flex;
   justify-content: center;
+  padding-left: 30px;
 }
 #section_5{
   background-color: white;
@@ -310,6 +341,7 @@ font-size: 25px;
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  padding-left: 30px;
 
 }
 .text_trendsida{
@@ -332,7 +364,6 @@ font-size: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
 
 }
 
@@ -345,12 +376,11 @@ font-size: 25px;
 
 .bilder_trendsida{
   width: 90%;
-  height: 260px;
-  margin: 10px;
+  margin: 20px;
 }
 
 #volang_trendsida{
-  height: 280px;
+  width: 315px;
 }
 
 #section_8{
@@ -448,22 +478,38 @@ font-size: 25px;
 
 footer {
   background-color:black;
-  height: 100px;
+  height: 200px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   color: white;
 }
-.sociala_medier{
+
+/* Stilar för mobilanpassning */
+.sociala_medier, .juridiskt {
+  display: flex;
+  flex-wrap: wrap; /* Låter innehållet flöda över flera rader */
+}
+
+.sociala_medier > div, .juridiskt > div {
+  flex: 1 1 50%; /* Delar kolumnen i två för sociala medier och juridiskt */
+}
+
+
+/* .sociala_medier{
 margin: 20px;
 display: flex;
 flex-direction: column;
 } 
+
 .juridiskt{
   padding: 10px;
   position: relative;
-}
+  display: flex;
+  flex-direction: column;
+  
+} */
 
 header {
   height: 80px;
@@ -516,7 +562,7 @@ header {
   margin: var(--burgerline_margin);
   background: black;
   border-radius: 20%;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 
 .burger_in_x_form #burger_line_2 {
@@ -536,6 +582,7 @@ header {
   cursor: pointer;
   padding-left: 20px;
   padding-top: 20px;
+  position: relative;
 }
 
 h1{
@@ -551,19 +598,19 @@ h1{
   border-radius: 1rem;
   border: none;
   position: absolute;
-  top: 70%;
-  left: 45%;
+  margin: 125px;
+  margin-top: 400px;
   border-radius:0%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-radius: 10px;
 }
 #text_se1 {
   color: white;
-  position: relative;
-  left: 200px;
+  margin-left: 50px;
   top: 50px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  width: 900px;
+  width: 300px;
+  text-align: center;
 }
 
 #prenumerera{
@@ -572,35 +619,616 @@ h1{
   position: relative;
   height: 50px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-left: 20px;
-  margin-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-right: 20px;
-
-
+  margin-right: 10px;
+  margin-top: 15px;
 }
 
-
-/* telefonanpassning */
-@media screen and (max-width: 800px) {
+/* Datoranpassning */
+@media screen and (min-width: 600px) {
+  * {
+    padding: 0;
+    margin: 0;
+    --burgerline_width: 30px;
+    --burgerline_height: 6px;
+    --burgerline_margin: 5px;
+      
+    --background_color: white;
+  }
+  
   #huvudsida{
-    grid-template-columns: 1fr;
-    grid-template-rows: 500px 80px 600px 500px 500px 500px ;
+    display: grid;
+    width: 1263px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 600px 80px 500px;
     grid-template-areas:
-    "se1"
-    "se2"
-    "ar3"
-    "ar4"
-    "ar5";
+    "se1 se1 se1"
+    "se2 se2 se2"
+    "ar3 ar4 ar5" ;
+  }
+  
+  #section_1 {
+    grid-area: se1;
+    background-image: url(../img/bild_sid1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #section_2 {
+    background-color: white;
+    grid-area: se2;
+    align-items: center;
+  }
+  
+  #text_se2 {
+    padding-top: 10px;
+    font-size: 25px;
+  }
+  
+  #article_3 {
+    grid-area: ar3;
+    background-image: url(../img/fashionweekcopenhagen_sid1_.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .fashionweek_copengen_text {
+  color: white;
+  font-size: 25px;
+  }
+  #article_4 {
+    grid-area: ar4;
+    background-image: url(../img/met_gala_sid1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #trendsida{
+    display: grid;
+    width: 1263px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 300px 300px 300px;
+    grid-template-areas:
+    "se3 se3"
+    "se4 se5"
+    "se6 se7" 
+    "se8 se9";
+  }
+  
+  #beautysida{
+    display: grid;
+    width: 1220px;
+    height:1150px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 500px 50px 400px;
+    grid-template-areas: 
+    "se1_b se1_b se1_b se1_b"
+    "se2_b se2_b se2_b se3_b"
+    "ur ur ur ur"
+    "se4_b se4_b se4_b se4_b";
+  }
+  
+  #underrubrik {
+    grid-area: ur;
+  }
+
+  #beautytext_se2{
+    width: 900px;
+    padding-left: 230px;
+  }
+  
+  #rubrik_beauty {
+    font-size: xx-large;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 1000px;
+  }
+  
+  #text_beauty {
+    margin-right: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 1200px;
+  }
+  
+  #section_1_beauty {
+    grid-area: se1_b;
+    background-color: white;
+  }
+  
+  #section_2_beauty {
+    grid-area: se2_b;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+  }
+  
+  #skincare_bild{
+    height: 90%;
+    padding-bottom: 0px;
+  }
+  #haircare_bild{
+    height: 200px;
+  }
+  #traning_beauty{
+    height: 200px;
+  }
+  
+  #section_3_beauty {
+    grid-area: se3_b;
+    background-color: white;
+    text-align: left;
+  }
+  
+  #secondhand_sida{
+    display: grid;
+    width: 1263px;
+    height: 1500px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 500px 500px 100px 200px;
+    grid-template-areas: 
+    "sh_1 sh_1"
+    "sh_2 sh_3"
+    "sh_4 sh_4"
+    "sh_5 sh_5"
+    "sh_6 sh_6"
+    ;
+  }
+  #se1_sh{
+    grid-area: sh_1;
+    background-color: white;
+  }
+  
+  #se2_sh{
+    grid-area: sh_2;
+    background-color: lightgrey;
+    width: 100%;
+
+  }
+  
+  #se3_sh{
+    grid-area: sh_3;
+    width: 100%;
+  }
+  
+  #se4_sh{
+    grid-area: sh_4;
+    background-color: white;
+    text-align: center;
+    width: 1250px;
+  }
+  
+  #se5_sh{
+    grid-area: sh_5;
+    background-color: white;
+    text-align: center;
+    width: 1200px;
+  }
+  
+  #se6_sh{
+    grid-area: sh_6;
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 10px;
+  
+  }
+  
+  #sellpy{
+    background-color: blue;
+    height: 150px;
+    width: 300px;
+    color: white;
+    margin-left: 120px;
+    margin-right: 50px;
+    text-align: center;
+    font-weight: bold;
+  
+  }
+  
+  #vinted{
+    background-color: rgb(25, 159, 110);
+    height: 150px;
+    width: 300px;
+    color: white;
+    margin-right: 50px;
+    text-align: center;
+    font-weight: bold;
+  
+  }
+  
+  #vestaire{
+    background-color: red;
+    height: 150px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  
+  }
+  
+  .secondhand_butik_text{
+    margin-top: 60px;
+    font-size: large;
+  }
+  
+  #text_secondhand {
+    margin-right: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 1200px;
+  }
+  
+  #rubrik_secondhand{
+    font-size: xx-large;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+  #bild_stjarnjacka{
+    width: 631.5px;
+    height: 500px;
+  }
+  
+  #text_sh_1{
+    margin-top: 40px;
+    margin-left: 130px;
+    margin-right: 100px;
+    font-weight: bold;
+    width: 1000px;
+  }
+  
+  #text_sh_huvud{
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  #text_sh_2{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  #text_sh_3{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+  }
+  
+  #text_sh_4{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+  }
+  
+  #text_sh_5{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  #se3_2{
+    margin-bottom: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  #smink_1{
+    height: 300px;
+  }
+  
+  #smink_2{
+    height: 300px;
+  }
+  
+  #smink_3{
+    height: 300px;
+  }
+  
+  #smink_4{
+    height: 299px;
+  }
+  
+  #section_4_beauty {
+    grid-area: se4_b;
+    background-color: white;
+    display: flex;
+    text-align: center;
+  }
+  
+  #section_3{
+    background-color: white;
+    grid-area: se3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #trender_rubrik{
+    font-size: 80px;
+  }
+  
+  #section_4{
+    background-color: white;
+    grid-area: se4;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  #section_5{
+    background-color: white;
+    grid-area: se5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  
+  }
+  .text_trendsida{
+    padding-top:20px;
+  }
+  #section_6{
+    grid-area: se6;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  
+  }
+  
+  #section_7{
+    grid-area: se7;
+    align-items: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  
+  }
+  
+  #palsjackor{
+    width: 90%;
+    height: 260px;
+    margin: 10px;
+  }
+  
+  
+  .bilder_trendsida{
+    width: 90%;
+    height: 260px;
+    margin: 10px;
+  }
+  
+  #volang_trendsida{
+    height: 280px;
+    width: 400px;
+  }
+  
+  #section_8{
+    background-color: white ;
+    grid-area: se8;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  #section_9{
+    grid-area: se9;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  
+  }
+  
+  .met_gala_text {
+  color: white;
+  font-size: 25px;
+  }
+  
+  #article_5 {
+    grid-area: ar5;
+    background-image: url(../img/bild_sid1_newyork.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #article_6 {
+    grid-area: ar6;
+    background-color: green;
+  
+  }
+  
+  #article_7 {
+    grid-area: ar7;
+    background-color: pink;
+  }
+  
+  #article_8 {
+    grid-area: ar8;
+    background-color: purple;
+  }
+  #article_9 {
+    grid-area: ar9;
+    background-color: blue;
+  }
+  #article_10 {
+    grid-area: ar10;
+    background-color: orange;
+  }
+  
+  #article_11 {
+    grid-area: ar11;
+    background-color: purple;
+  }
+  
+  #article_12 {
+    grid-area: ar12;
+  }
+  #article_13 {
+    grid-area: ar13;
+    background-color: darkblue;
+  }
+  #article_14 {
+    grid-area: ar8;
+    background-color: pink;
+  }
+  #article_15 {
+    grid-area: ar15;
+    background-color: purple;
+  }
+  #article_16 {
+    grid-area: ar16;
+    background-color: blueviolet;
+  }
+  #section_12{
+    grid-area: se13;
+    background-color: grey;
+  }
+  #section_13{
+    grid-area: se13;
+    background-color: beige;
+  }
+  
+  .new_york_text{
+    color: white;
+    font-size: 25px;
+  }
+  
+  footer {
+    background-color:black;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+  }
+  .sociala_medier{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  } 
+  .juridiskt{
+    
+  }
+  
+  header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background_color);
+    border-bottom: solid black;
+  }
+  
+  #link_list {
+    background: var(--background_color);
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: -420px;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    transition: all 0.5s;
+  }
+  
+  .links_visible {
+    transform: translateY(500px);
+  }
+  
+  #link_list a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+    letter-spacing: 0.1875rem;
+    text-transform: uppercase;
+    width: 200px;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #link_list a:hover {
+    background: grey;
+    color: darkgrey;
+  }
+  
+  .burger_line {
+    width: var(--burgerline_width);
+    height: var(--burgerline_height);
+    margin: var(--burgerline_margin);
+    background: black;
+    border-radius: 20%;
+    transition: all 0.5s;
+  }
+  
+  .burger_in_x_form #burger_line_2 {
+    opacity: 0;
+  }
+  
+  .burger_in_x_form #burger_line_1 {
+    transform: translateY(calc(var(--burgerline_height) + var(--burgerline_margin))) rotate(45deg);
+  }
+  
+  .burger_in_x_form #burger_line_3 {
+    transform: translateY(calc((-1)*(var(--burgerline_height) + var(--burgerline_margin)))) rotate(-45deg);
+  }
+  
+  #burger {
+    margin-right: 20px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  
+  h1{
+    margin-top: 20px;
+  }
+  
+  #upptack {
+    width: 165px;
+    height: 62px;
+    cursor: pointer;
+    color: BLACK;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: none;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    border-radius:0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
   }
   #text_se1 {
     color: white;
     position: relative;
-    left: 20px;
+    left: 200px;
     top: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 20px;
+    width: 900px;
   }
-
+  
+  #prenumerera{
+    color: black;
+    background-color:lightgrey;
+    position: relative;
+    height: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+  
+  }
+  
 }
+
+/* display: none; */
