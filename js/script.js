@@ -9,5 +9,3 @@ function toggleMenu() {
 }
 
 burger.addEventListener('click', toggleMenu)
-
-linkList.addEventListener('click', toggleMenu)

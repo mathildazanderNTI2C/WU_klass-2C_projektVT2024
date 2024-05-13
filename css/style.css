@@ -10,7 +10,7 @@
 
 #huvudsida{
   display: grid;
-  width: 430px;
+  width: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: 600px 80px 500px 500px 500px;
   grid-template-areas:
@@ -59,7 +59,7 @@ font-size: 25px;
 
 #trendsida{
   display: grid;
-  width: 430px;
+  width: 100%;
   grid-template-columns: 390px;
   grid-template-rows: 150px 300px 300px 300px;
   grid-template-areas:
@@ -74,10 +74,10 @@ font-size: 25px;
 
 #beautysida{
   display: grid;
-  width: 430px;
-  height: 2500px;
+  overflow-x: hidden;
+  max-width: 100%;
   grid-template-columns: 1fr;
-  grid-template-rows: 300px 350px 20px 400px 900px;
+  grid-template-rows: 300px 350px -50px 400px 900px;
   grid-template-areas: 
   "se1_b"
   "se2_b"
@@ -89,6 +89,8 @@ font-size: 25px;
 #underrubrik {
   grid-area: ur;
   height: 80px;
+  padding-left: 150px;
+  padding-top: 50px;
 }
 
 #rubrik_beauty {
@@ -124,9 +126,9 @@ font-size: 25px;
 }
 
 #skincare_bild{
-  height: 280px;
+  height: 260px;
   padding-bottom: 0px;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 #haircare_bild{
   height: 200px;
@@ -143,7 +145,7 @@ font-size: 25px;
 
 #secondhand_sida{
   display: grid;
-  width: 430px;
+  width: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: 250px 400px 400px 1200px 200px 600px;
   grid-template-areas: 
@@ -239,7 +241,6 @@ font-size: 25px;
 #text_secondhand {
   margin-left: 10px;
   margin-top: 20px;
-  width:430px;
 }
 
 #rubrik_secondhand{
@@ -292,7 +293,7 @@ font-size: 25px;
 }
 
 #smink_1{
-  height: 300px;
+  width: 340px;
 }
 
 #smink_2{
@@ -300,11 +301,11 @@ font-size: 25px;
 }
 
 #smink_3{
-  height: 300px;
+  width: 340px;
 }
 
 #smink_4{
-  height: 300px;
+  width: 340px;
 }
 
 #section_4_beauty {
@@ -479,6 +480,7 @@ font-size: 25px;
 footer {
   background-color:black;
   height: 200px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -606,10 +608,10 @@ h1{
 }
 #text_se1 {
   color: white;
-  margin-left: 50px;
-  top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 70px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  width: 300px;
   text-align: center;
 }
 
@@ -621,6 +623,7 @@ h1{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-right: 10px;
   margin-top: 15px;
+  border-radius: 5px;
 }
 
 /* Datoranpassning */
@@ -637,7 +640,7 @@ h1{
   
   #huvudsida{
     display: grid;
-    width: 1263px;
+    width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 600px 80px 500px;
     grid-template-areas:
@@ -708,6 +711,11 @@ h1{
   
   #underrubrik {
     grid-area: ur;
+    margin-top: 10px;
+    padding-left: 0px;
+    grid-area: ur;
+    padding-top: 0px;
+
   }
 
   #beautytext_se2{
@@ -924,7 +932,8 @@ h1{
   }
   
   #smink_4{
-    height: 299px;
+    height: 300px;
+    width: 300px;
   }
   
   #section_4_beauty {
@@ -1110,9 +1119,6 @@ h1{
   display: flex;
   flex-direction: column;
   } 
-  .juridiskt{
-    
-  }
   
   header {
     height: 80px;
@@ -1125,15 +1131,14 @@ h1{
   #link_list {
     background: var(--background_color);
     display: flex;
-    flex-direction: column;
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    top: -420px;
+    flex-direction: row;
+    height: 50px;
+    width: 100px;
+    margin-left: 200px;
+    top: 20px;
     align-items: center;
     justify-content: space-around;
     list-style: none;
-    transition: all 0.5s;
   }
   
   .links_visible {
@@ -1146,7 +1151,6 @@ h1{
     font-weight: bold;
     font-size: 1.25rem;
     letter-spacing: 0.1875rem;
-    text-transform: uppercase;
     width: 200px;
     height: 3rem;
     display: flex;
@@ -1157,6 +1161,7 @@ h1{
   #link_list a:hover {
     background: grey;
     color: darkgrey;
+    transition: none;
   }
   
   .burger_line {
@@ -1165,7 +1170,7 @@ h1{
     margin: var(--burgerline_margin);
     background: black;
     border-radius: 20%;
-    transition: all 0.5s;
+    transition: all 0.0s;
   }
   
   .burger_in_x_form #burger_line_2 {
@@ -1181,14 +1186,12 @@ h1{
   }
   
   #burger {
-    margin-right: 20px;
-    cursor: pointer;
-    padding-left: 20px;
-    padding-top: 20px;
+   display: none;
   }
   
   h1{
     margin-top: 20px;
+    margin-left: 15px;
   }
   
   #upptack {
@@ -1231,4 +1234,3 @@ h1{
   
 }
 
-/* display: none; */
