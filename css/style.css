@@ -47,8 +47,8 @@
   background-size: cover;
 }
 .fashionweek_copengen_text {
-color: white;
-font-size: 25px;
+  color: white;
+  font-size: 25px;
 }
 #article_4 {
   grid-area: ar4;
@@ -198,7 +198,6 @@ font-size: 25px;
   flex-direction:column;
   align-items: center;
   margin-bottom: 10px;
-
 }
 
 #sellpy{
@@ -209,7 +208,6 @@ font-size: 25px;
   text-align: center;
   font-weight: bold;
   margin-bottom:20px;
-
 }
 
 #vinted{
@@ -220,7 +218,6 @@ font-size: 25px;
   text-align: center;
   font-weight: bold;
   margin-bottom:20px ;
-
 }
 
 #vestaire{
@@ -230,7 +227,6 @@ font-size: 25px;
   color: white;
   text-align: center;
   font-weight: bold;
-
 }
 
 .secondhand_butik_text{
@@ -335,6 +331,7 @@ font-size: 25px;
   justify-content: center;
   padding-left: 30px;
 }
+
 #section_5{
   background-color: white;
   grid-area: se5;
@@ -343,8 +340,8 @@ font-size: 25px;
   align-items: center;
   padding: 20px;
   padding-left: 30px;
-
 }
+
 .text_trendsida{
   padding-top:20px;
 }
@@ -374,7 +371,6 @@ font-size: 25px;
   margin: 10px;
 }
 
-
 .bilder_trendsida{
   width: 90%;
   margin: 20px;
@@ -391,8 +387,8 @@ font-size: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
+
 #section_9{
   grid-area: se9;
   background-color: white;
@@ -400,12 +396,11 @@ font-size: 25px;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-
 }
 
 .met_gala_text {
-color: white;
-font-size: 25px;
+  color: white;
+  font-size: 25px;
 }
 
 #article_5 {
@@ -488,30 +483,15 @@ footer {
   color: white;
 }
 
-/* Stilar för mobilanpassning */
+
 .sociala_medier, .juridiskt {
   display: flex;
-  flex-wrap: wrap; /* Låter innehållet flöda över flera rader */
+  flex-wrap: wrap; 
 }
 
 .sociala_medier > div, .juridiskt > div {
-  flex: 1 1 50%; /* Delar kolumnen i två för sociala medier och juridiskt */
+  flex: 1 1 50%; 
 }
-
-
-/* .sociala_medier{
-margin: 20px;
-display: flex;
-flex-direction: column;
-} 
-
-.juridiskt{
-  padding: 10px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  
-} */
 
 header {
   height: 80px;
@@ -606,6 +586,7 @@ h1{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-radius: 10px;
 }
+
 #text_se1 {
   color: white;
   margin-left: 20px;
@@ -673,10 +654,12 @@ h1{
     background-position: center;
     background-size: cover;
   }
+
   .fashionweek_copengen_text {
-  color: white;
-  font-size: 25px;
+    color: white;
+    font-size: 25px;
   }
+
   #article_4 {
     grid-area: ar4;
     background-image: url(../img/met_gala_sid1.jpg);
@@ -686,7 +669,7 @@ h1{
   
   #trendsida{
     display: grid;
-    width: 1263px;
+    width: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 150px 300px 300px 300px;
     grid-template-areas:
@@ -698,8 +681,8 @@ h1{
   
   #beautysida{
     display: grid;
-    width: 1220px;
-    height:1150px;
+    width: auto;
+    height: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 200px 500px 50px 400px;
     grid-template-areas: 
@@ -715,7 +698,6 @@ h1{
     padding-left: 0px;
     grid-area: ur;
     padding-top: 0px;
-
   }
 
   #beautytext_se2{
@@ -770,8 +752,8 @@ h1{
   
   #secondhand_sida{
     display: grid;
-    width: 1263px;
-    height: 1500px;
+    width: auto;
+    height: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 500px 500px 100px 200px;
     grid-template-areas: 
@@ -779,9 +761,9 @@ h1{
     "sh_2 sh_3"
     "sh_4 sh_4"
     "sh_5 sh_5"
-    "sh_6 sh_6"
-    ;
+    "sh_6 sh_6";
   }
+
   #se1_sh{
     grid-area: sh_1;
     background-color: white;
@@ -818,7 +800,6 @@ h1{
     display: flex;
     flex-direction:row;
     margin-bottom: 10px;
-  
   }
   
   #sellpy{
@@ -830,7 +811,6 @@ h1{
     margin-right: 50px;
     text-align: center;
     font-weight: bold;
-  
   }
   
   #vinted{
@@ -841,7 +821,6 @@ h1{
     margin-right: 50px;
     text-align: center;
     font-weight: bold;
-  
   }
   
   #vestaire{
@@ -851,7 +830,6 @@ h1{
     color: white;
     text-align: center;
     font-weight: bold;
-  
   }
   
   .secondhand_butik_text{
@@ -933,7 +911,8 @@ h1{
   
   #smink_4{
     height: 300px;
-    width: 300px;
+    width: auto;
+    margin-right: 0px;
   }
   
   #section_4_beauty {
@@ -980,7 +959,6 @@ h1{
     flex-direction: column;
     align-items: center;
     padding: 20px;
-  
   }
   
   #section_7{
@@ -991,7 +969,6 @@ h1{
     flex-direction: column;
     align-items: center;
     padding: 20px;
-  
   }
   
   #palsjackor{
@@ -1028,12 +1005,11 @@ h1{
     flex-direction: column;
     align-items: center;
     padding: 20px;
-  
   }
   
   .met_gala_text {
-  color: white;
-  font-size: 25px;
+    color: white;
+    font-size: 25px;
   }
   
   #article_5 {
@@ -1046,7 +1022,6 @@ h1{
   #article_6 {
     grid-area: ar6;
     background-color: green;
-  
   }
   
   #article_7 {
@@ -1115,9 +1090,9 @@ h1{
     color: white;
   }
   .sociala_medier{
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
   } 
   
   header {
@@ -1186,7 +1161,7 @@ h1{
   }
   
   #burger {
-   display: none;
+    display: none;
   }
   
   h1{
@@ -1209,6 +1184,7 @@ h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 10px;
   }
+
   #text_se1 {
     color: white;
     position: relative;
@@ -1231,6 +1207,5 @@ h1{
     margin-right: 20px;
   
   }
-  
 }
 

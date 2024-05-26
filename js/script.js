@@ -5,7 +5,7 @@ function toggleMenu() {
 
     linkList.classList.toggle('links_visible')
     burger.classList.toggle('burger_in_x_form')
-
+    
 }
 
 burger.addEventListener('click', toggleMenu)
